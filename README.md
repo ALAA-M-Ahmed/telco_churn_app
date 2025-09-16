@@ -45,7 +45,7 @@ The model predicts churn with good accuracy and handles categorical features usi
     - Churn Prediction: Yes / No  
     - Probability of Leaving  
 
-The interactive app is available here: [Streamlit App Link](https://share.streamlit.io/your-app-link)
+The interactive app is available here: [[Streamlit App Link](https://share.streamlit.io/your-app-link)](https://telcochurnapp-vnged85tccxv3vvjkvaqd3.streamlit.app)
 
 ---
 
