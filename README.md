@@ -1,48 +1,52 @@
-Telco Customer Churn Prediction
-Project Overview
+# 📊 Telco Customer Churn Prediction
 
-This project predicts which customers are likely to leave a telecom service, helping the company take proactive retention measures. The goal is to turn raw customer data into actionable insights using Machine Learning and an interactive web app.
+This project focuses on predicting whether a customer will leave a telecom service. The dataset contains customer information, service details, and usage metrics. The analysis and model are designed to help the company reduce churn and improve customer retention.
 
-Key Insights from EDA
+---
 
-Contract Type Matters: Customers with month-to-month contracts are far more likely to churn.
+## 🔍 Key Insights from EDA
 
-Tenure Impact: Longer-tenured customers are less likely to leave.
+### 1. Customer Tenure
+- Customers with shorter tenure tend to churn more.
+- Long-term customers are more loyal.
 
-Monthly Charges Influence: Higher monthly bills correlate with higher churn probability.
+### 2. Contract Type
+- Month-to-month contracts have the highest churn rate.
+- One-year and Two-year contracts show lower churn rates.
 
-Service Usage Patterns: Usage of internet-related services, security features, and streaming options influences customer retention.
+### 3. Monthly & Total Charges
+- Higher monthly charges slightly increase the churn probability.
+- Total charges are lower for customers who recently joined, and these customers have higher churn risk.
 
-These insights helped guide feature engineering and improved model accuracy.
+### 4. Services Impact
+- Customers with no online security, online backup, or tech support are more likely to churn.
+- Streaming services usage does not strongly affect churn.
 
-Machine Learning Model
+---
 
-Algorithm: XGBoost Classifier
+## 🧠 Machine Learning Model
 
-Performance: Achieved high accuracy and balanced F1-score on the test set.
+- **Algorithm:** XGBoost Classifier  
+- **Accuracy:** [Insert Accuracy Here]  
+- **F1 Score:** [Insert F1 Score Here]  
 
-Preprocessing: One-hot encoding for categorical features, alignment of training/testing columns.
+The model predicts churn with good accuracy and handles categorical features using one-hot encoding.
 
-Saved Model: churn_model.pkl for deployment in Streamlit.
+---
 
-Interactive Web App
+## ⚡ How to Use
 
-Built with Streamlit, the app allows users to:
+1. Enter customer details in the input fields:
+    - Tenure (Months)  
+    - Monthly Charges  
+    - Total Charges  
+    - Contract Type  
+2. Click **Predict** to see:
+    - Churn Prediction: Yes / No  
+    - Probability of Leaving  
 
-Enter customer information:
+The interactive app is available here: [Streamlit App Link](https://share.streamlit.io/your-app-link)
 
-Tenure (Months)
+---
 
-Monthly Charges
 
-Total Charges
-
-Contract Type
-
-Get real-time predictions:
-
-Churn / No Churn
-
-Probability of leaving
-
-Try it yourself: Live Demo
